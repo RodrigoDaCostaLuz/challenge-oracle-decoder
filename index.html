@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Criptografia de Texto</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Criptografia de Texto</h1>
+    <form id="form">
+      <label>
+        Texto Original:
+        <input type="text" id="texto-original" name="texto-original" required />
+      </label>
+      <label>
+        Operação:
+        <select id="operacao" name="operacao">
+          <option value="criptografar">Criptografar</option>
+          <option value="descriptografar">Descriptografar</option>
+        </select>
+      </label>
+      <label>
+        Texto Criptografado/Descriptografado:
+        <textarea
+          id="texto-criptografado"
+          name="texto-criptografado"
+          readonly
+        ></textarea>
+      </label>
+      <button type="submit">Executar</button>
+    </form>
+    <footer>desenvolvimento: Rodrigo da Costa Luz</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
